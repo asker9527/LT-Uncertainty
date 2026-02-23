@@ -19,8 +19,8 @@ from tools.models import set_output_layer
 
 # 定义一些超参数
 model_name = 'resnet50'     # 'mobilenet_v2','efficientnet_b0','resnet18','resnet50
-dataset_name = 'DIOR'           # FGSC, DIOR, DOTA
-method_name = 'soft_label'    # CE, trust, w_trust, trust_smooth
+dataset_name = 'FGSC'           # FGSC, DIOR, DOTA
+method_name = 'trust_decomposition'    # CE, trust, w_trust, trust_smooth
 optim_name='warmup+cosine'      # warmup+cosine
 activation = 'softplus'         # softplus, sigmoid, relu
 is_pre = False
@@ -31,7 +31,7 @@ max_lr = 1e-3       # 预热后的最大学习率0.001
 min_lr = 1e-6       # 余弦退火的最小学习率
 
 # save_path = './output/test9'
-save_path = f'./output/{dataset_name}/{ "pretrained" if is_pre else "" }_{model_name}/v2/{method_name}_{optim_name}7-17-w2'
+save_path = f'./output/{dataset_name}/{ "pretrained" if is_pre else "" }_{model_name}/v2/{method_name}_{optim_name}7-31-sig1-1-a0'
 
 
 # 0. 路径管理
@@ -187,7 +187,7 @@ for epoch in range(num_epochs):
         elif method_name == 'trust_cmo' and cmo_gate == 1:
             loss = criterion(target1,outputs,num_classes,epoch,num_epochs) * lam + criterion(target2,outputs,num_classes,epoch,num_epochs) * (1. - lam)
         elif 'trust' in method_name:
-            loss,W ,A, B = criterion(labels,outputs,num_classes,epoch,num_epochs)
+            loss,A, B,C,D= criterion(labels,outputs,num_classes,epoch,num_epochs)
         elif cmo_gate == 1:
             loss = criterion(outputs, target1) * lam + criterion(outputs, target2) * (1. - lam)
 
@@ -207,13 +207,14 @@ for epoch in range(num_epochs):
         # 收集预测和真实标签用于计算类别准确率
         all_preds.extend(predicted.cpu().numpy())
         all_labels.extend(labels.cpu().numpy())
-        if W:
+        if A:
             with open(os.path.join(results_save_path,'loss.txt'), 'a') as f:  # 使用 'a' 模式追加写入
                         f.write(f"{loss.cpu()} ")
-                        f.write(f"{W.cpu()} ")
+                        # f.write(f"{W.cpu()} ")
                         f.write(f"{A.cpu()} ")
-                        f.write(f"{B.cpu()} \n")
-                        # f.write(f"{C.cpu()}\n")
+                        f.write(f"{B.cpu()} ")
+                        f.write(f"{C.cpu()} ")
+                        f.write(f"{D.cpu()} \n")
 
                     
     if scheduler is not None:
@@ -304,7 +305,9 @@ for epoch in range(num_epochs):
             # model_save_path = os.path.join(models_save_path,f'{model_name}_model{epoch}.pth')
             model_save_path = os.path.join(models_save_path,f'{model_name}_bestmodel.pth')
             torch.save(model.state_dict(), model_save_path)
-    gc.collect()
-    torch.cuda.empty_cache()
+    model_save_path = os.path.join(models_save_path,f'{model_name}_model{epoch}.pth')
+    torch.save(model.state_dict(), model_save_path)
+    # torch.cuda.empty_cache()
+    # torch.cuda.ipc_collect()    
 
 writer.close()

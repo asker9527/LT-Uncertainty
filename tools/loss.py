@@ -28,7 +28,7 @@ def get_loss(method_name):
         loss_fuc = uncertainty_weighted_smooth_loss
     if method_name == 'soft_label':
         loss_fuc = soft_label_cross_entropy
-        print(f"Loss:{method_name}")
+    print(f"Loss:{method_name}")
     return loss_fuc
     
 def KL(alpha, c):
@@ -61,7 +61,7 @@ def norm_exp(a: torch.Tensor, b: torch.Tensor) -> torch.Tensor:
 
 # p:label alpha:Dirichlet parameter
 def trust_ce_loss(p, alpha, c, global_step, annealing_step):
-    alpha = torch.clamp(alpha, min=1e-6)  # 或 1e-4
+    alpha = torch.clamp(alpha, min=1)  # 或 1e-4
     S = torch.sum(alpha, dim=1, keepdim=True)
     E = alpha - 1
     label = F.one_hot(p.long(), num_classes=c)
@@ -95,7 +95,7 @@ def wtrust_ce_loss(p, alpha, c, global_step, annealing_step):
     
     alp = E.cuda() * (1 - label.cuda()) + 1
     B = annealing_coef * KL(alp, c)
-    uncertainty_weight = (c / S.detach())**2
+    uncertainty_weight = (c / S.detach())**5
     # print(f'w:{uncertainty_weight}\n')
     return (uncertainty_weight*A + B).mean(),uncertainty_weight.mean(), A.mean(), B.mean()
 
@@ -190,6 +190,7 @@ def adaptive_soft_label(one_hot, uncertainty, alpha=0.2):
     """
     # 将不确定性映射到 (0, alpha) 区间
     smooth = alpha * torch.sigmoid(uncertainty/torch.log(torch.tensor(one_hot.size(1)))).unsqueeze(1)  # [B, 1]
+    # smooth = alpha * torch.sigmoid(uncertainty).unsqueeze(1)  # [B, 1]
 
     # 构造 soft label
     soft_label = one_hot * (1 - smooth) + smooth / one_hot.size(1)
@@ -222,7 +223,7 @@ def soft_label_cross_entropy(preds, targets, reduction='mean', label_smoothing=0
     # 如果需要 label smoothing，就应用平滑
     if label_smoothing > 0:
         smooth_value = label_smoothing / num_classes
-        targets = (1.0 - label_smoothing) * targets + smooth_value/num_classes
+        targets = (1.0 - label_smoothing) * targets + smooth_value
 
     # Log softmax
     log_probs = F.log_softmax(preds, dim=-1)
@@ -252,29 +253,20 @@ def uncertainty_weighted_loss(p, alpha, c, global_step, annealing_step, epsilon=
     alp = E.cuda() * (1 - label.cuda()) + 1
     B = annealing_coef * KL(alp, c)
 
-    # Weighted difference + sigmoid
-    # u_epi_norm = Ue/Up
-    # u_alea_norm = Ua/Up
-    # logits = u_epi_norm -u_alea_norm
-    # weights = norm_exp(Ue, Ua).detach()
-    # weights = (Ue**0.5)
-    # if global_step < 10:
-    # weights = (c / torch.clamp(S.detach(), min=1.0))**5
-
-    weights = (c / torch.clamp(S, min=1.0))**2
+    weights = (c / torch.clamp(S, min=1.0))**1
 
     weighted_loss = (weights.detach() * A + B).mean()
 
-    return weighted_loss
+    return weighted_loss, Up.mean(), Ue.mean(), Ua.mean(), (c / torch.clamp(S, min=1.0)).mean()
 
 def uncertainty_weighted_smooth_loss(p, alpha, c, global_step, annealing_step, epsilon=1e-6,cmo=False):
-    # alpha = torch.clamp(alpha, min=epsilon)  # 或 1e-4
-    # S = torch.sum(alpha, dim=1, keepdim=True)
-    # E = alpha - 1
-
-    alpha = torch.clamp(alpha, min=epsilon) + 1  # 或 1e-4
+    alpha = torch.clamp(alpha, min=epsilon)  # 或 1e-4
     S = torch.sum(alpha, dim=1, keepdim=True)
     E = alpha - 1
+
+    # alpha = torch.clamp(alpha, min=epsilon) + 1  # 或 1e-4
+    # S = torch.sum(alpha, dim=1, keepdim=True)
+    # E = alpha - 1
 
     label = F.one_hot(p.long(), num_classes=c)
     # calculate uncertainty by entropy
@@ -283,16 +275,17 @@ def uncertainty_weighted_smooth_loss(p, alpha, c, global_step, annealing_step, e
         soft_label = label
     else:
         soft_label = adaptive_soft_label(label, Ua, alpha=0.2)
+        # soft_label = label
     A = torch.sum(soft_label.cuda() * (torch.digamma(S) - torch.digamma(alpha)), dim=1, keepdim=True)
     annealing_coef = min(1, global_step / annealing_step)
 
     alp = E.cuda() * (1 - soft_label.cuda()) + 1
     B = annealing_coef * KL(alp, c)
 
-    weights = (2*(c / torch.clamp(S, min=1.0)))**2
+    weights = (2*c / torch.clamp(S, min=1.0))**3
     if cmo:
         weighted_loss = (A + B).mean()
     else:
         weighted_loss = (weights.detach() * A+B).mean()
 
-    return weighted_loss, weights.mean(), A.mean(), (c/S).mean()
+    return weighted_loss.mean(), Up.mean(), Ue.mean(), Ua.mean(), (c / torch.clamp(S, min=1.0)).mean()

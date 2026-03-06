@@ -1,0 +1,702 @@
+Epoch 1
+Overall Accuracy: 20.87%
+Average Class Accuracy: 8.30%
+Class 0 Accuracy: 92.78%
+Class 1 Accuracy: 20.59%
+Class 2 Accuracy: 0.00%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 0.00%
+Class 5 Accuracy: 0.00%
+Class 6 Accuracy: 0.00%
+Class 7 Accuracy: 0.00%
+Class 8 Accuracy: 0.00%
+Class 9 Accuracy: 0.00%
+Class 10 Accuracy: 0.00%
+Class 11 Accuracy: 0.00%
+Class 12 Accuracy: 67.59%
+Class 13 Accuracy: 0.00%
+Class 14 Accuracy: 10.00%
+Class 15 Accuracy: 0.00%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 0.00%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 0.00%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 0.00%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 2
+Overall Accuracy: 21.00%
+Average Class Accuracy: 10.31%
+Class 0 Accuracy: 75.26%
+Class 1 Accuracy: 0.00%
+Class 2 Accuracy: 0.00%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 0.00%
+Class 5 Accuracy: 0.00%
+Class 6 Accuracy: 0.00%
+Class 7 Accuracy: 0.00%
+Class 8 Accuracy: 0.00%
+Class 9 Accuracy: 0.00%
+Class 10 Accuracy: 0.00%
+Class 11 Accuracy: 0.00%
+Class 12 Accuracy: 76.85%
+Class 13 Accuracy: 0.00%
+Class 14 Accuracy: 85.00%
+Class 15 Accuracy: 0.00%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 0.00%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 0.00%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 0.00%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 3
+Overall Accuracy: 24.03%
+Average Class Accuracy: 12.45%
+Class 0 Accuracy: 90.72%
+Class 1 Accuracy: 0.00%
+Class 2 Accuracy: 0.00%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 0.00%
+Class 5 Accuracy: 0.00%
+Class 6 Accuracy: 0.00%
+Class 7 Accuracy: 0.00%
+Class 8 Accuracy: 0.00%
+Class 9 Accuracy: 0.00%
+Class 10 Accuracy: 0.00%
+Class 11 Accuracy: 0.00%
+Class 12 Accuracy: 83.33%
+Class 13 Accuracy: 0.00%
+Class 14 Accuracy: 85.00%
+Class 15 Accuracy: 27.27%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 0.00%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 0.00%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 0.00%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 4
+Overall Accuracy: 25.49%
+Average Class Accuracy: 16.04%
+Class 0 Accuracy: 94.85%
+Class 1 Accuracy: 20.59%
+Class 2 Accuracy: 0.00%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 0.00%
+Class 5 Accuracy: 0.00%
+Class 6 Accuracy: 0.00%
+Class 7 Accuracy: 0.00%
+Class 8 Accuracy: 8.33%
+Class 9 Accuracy: 2.90%
+Class 10 Accuracy: 0.00%
+Class 11 Accuracy: 0.00%
+Class 12 Accuracy: 70.37%
+Class 13 Accuracy: 0.00%
+Class 14 Accuracy: 80.00%
+Class 15 Accuracy: 81.82%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 0.00%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 10.17%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 0.00%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 5
+Overall Accuracy: 26.82%
+Average Class Accuracy: 18.84%
+Class 0 Accuracy: 82.47%
+Class 1 Accuracy: 0.00%
+Class 2 Accuracy: 10.42%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 0.00%
+Class 5 Accuracy: 24.44%
+Class 6 Accuracy: 36.84%
+Class 7 Accuracy: 0.00%
+Class 8 Accuracy: 50.00%
+Class 9 Accuracy: 13.04%
+Class 10 Accuracy: 0.00%
+Class 11 Accuracy: 0.00%
+Class 12 Accuracy: 62.96%
+Class 13 Accuracy: 0.00%
+Class 14 Accuracy: 85.00%
+Class 15 Accuracy: 45.45%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 0.00%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 0.00%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 22.58%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 8
+Overall Accuracy: 27.06%
+Average Class Accuracy: 19.72%
+Class 0 Accuracy: 71.13%
+Class 1 Accuracy: 0.00%
+Class 2 Accuracy: 25.00%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 24.14%
+Class 5 Accuracy: 15.56%
+Class 6 Accuracy: 0.00%
+Class 7 Accuracy: 0.00%
+Class 8 Accuracy: 50.00%
+Class 9 Accuracy: 36.23%
+Class 10 Accuracy: 3.03%
+Class 11 Accuracy: 15.00%
+Class 12 Accuracy: 19.44%
+Class 13 Accuracy: 0.00%
+Class 14 Accuracy: 85.00%
+Class 15 Accuracy: 0.00%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 32.20%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 22.03%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 54.84%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 9
+Overall Accuracy: 30.10%
+Average Class Accuracy: 21.81%
+Class 0 Accuracy: 72.16%
+Class 1 Accuracy: 2.94%
+Class 2 Accuracy: 27.08%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 20.69%
+Class 5 Accuracy: 2.22%
+Class 6 Accuracy: 0.00%
+Class 7 Accuracy: 14.29%
+Class 8 Accuracy: 54.17%
+Class 9 Accuracy: 46.38%
+Class 10 Accuracy: 0.00%
+Class 11 Accuracy: 0.00%
+Class 12 Accuracy: 42.59%
+Class 13 Accuracy: 0.00%
+Class 14 Accuracy: 85.00%
+Class 15 Accuracy: 27.27%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 23.73%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 15.25%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 67.74%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 10
+Overall Accuracy: 30.46%
+Average Class Accuracy: 23.11%
+Class 0 Accuracy: 65.98%
+Class 1 Accuracy: 55.88%
+Class 2 Accuracy: 6.25%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 27.59%
+Class 5 Accuracy: 44.44%
+Class 6 Accuracy: 0.00%
+Class 7 Accuracy: 0.00%
+Class 8 Accuracy: 37.50%
+Class 9 Accuracy: 24.64%
+Class 10 Accuracy: 0.00%
+Class 11 Accuracy: 0.00%
+Class 12 Accuracy: 73.15%
+Class 13 Accuracy: 0.00%
+Class 14 Accuracy: 80.00%
+Class 15 Accuracy: 100.00%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 0.00%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 0.00%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 16.13%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 13
+Overall Accuracy: 34.59%
+Average Class Accuracy: 28.36%
+Class 0 Accuracy: 71.13%
+Class 1 Accuracy: 58.82%
+Class 2 Accuracy: 45.83%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 44.83%
+Class 5 Accuracy: 22.22%
+Class 6 Accuracy: 15.79%
+Class 7 Accuracy: 7.14%
+Class 8 Accuracy: 83.33%
+Class 9 Accuracy: 33.33%
+Class 10 Accuracy: 0.00%
+Class 11 Accuracy: 0.00%
+Class 12 Accuracy: 45.37%
+Class 13 Accuracy: 33.33%
+Class 14 Accuracy: 80.00%
+Class 15 Accuracy: 54.55%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 15.25%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 18.64%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 22.58%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 19
+Overall Accuracy: 40.17%
+Average Class Accuracy: 30.97%
+Class 0 Accuracy: 59.79%
+Class 1 Accuracy: 44.12%
+Class 2 Accuracy: 72.92%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 37.93%
+Class 5 Accuracy: 42.22%
+Class 6 Accuracy: 5.26%
+Class 7 Accuracy: 28.57%
+Class 8 Accuracy: 87.50%
+Class 9 Accuracy: 43.48%
+Class 10 Accuracy: 0.00%
+Class 11 Accuracy: 0.00%
+Class 12 Accuracy: 68.52%
+Class 13 Accuracy: 33.33%
+Class 14 Accuracy: 90.00%
+Class 15 Accuracy: 36.36%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 35.59%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 20.34%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 6.45%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 22
+Overall Accuracy: 43.20%
+Average Class Accuracy: 36.66%
+Class 0 Accuracy: 61.86%
+Class 1 Accuracy: 47.06%
+Class 2 Accuracy: 62.50%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 62.07%
+Class 5 Accuracy: 42.22%
+Class 6 Accuracy: 21.05%
+Class 7 Accuracy: 21.43%
+Class 8 Accuracy: 100.00%
+Class 9 Accuracy: 36.23%
+Class 10 Accuracy: 6.06%
+Class 11 Accuracy: 10.00%
+Class 12 Accuracy: 70.37%
+Class 13 Accuracy: 11.11%
+Class 14 Accuracy: 90.00%
+Class 15 Accuracy: 90.91%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 18.64%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 27.12%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 64.52%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 35
+Overall Accuracy: 46.97%
+Average Class Accuracy: 37.81%
+Class 0 Accuracy: 72.16%
+Class 1 Accuracy: 67.65%
+Class 2 Accuracy: 70.83%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 79.31%
+Class 5 Accuracy: 55.56%
+Class 6 Accuracy: 31.58%
+Class 7 Accuracy: 71.43%
+Class 8 Accuracy: 75.00%
+Class 9 Accuracy: 23.19%
+Class 10 Accuracy: 3.03%
+Class 11 Accuracy: 20.00%
+Class 12 Accuracy: 75.00%
+Class 13 Accuracy: 44.44%
+Class 14 Accuracy: 55.00%
+Class 15 Accuracy: 0.00%
+Class 16 Accuracy: 9.09%
+Class 17 Accuracy: 74.58%
+Class 18 Accuracy: 22.22%
+Class 19 Accuracy: 3.39%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 16.13%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 37
+Overall Accuracy: 47.21%
+Average Class Accuracy: 41.15%
+Class 0 Accuracy: 77.32%
+Class 1 Accuracy: 82.35%
+Class 2 Accuracy: 75.00%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 34.48%
+Class 5 Accuracy: 31.11%
+Class 6 Accuracy: 42.11%
+Class 7 Accuracy: 21.43%
+Class 8 Accuracy: 83.33%
+Class 9 Accuracy: 36.23%
+Class 10 Accuracy: 15.15%
+Class 11 Accuracy: 30.00%
+Class 12 Accuracy: 27.78%
+Class 13 Accuracy: 22.22%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 90.91%
+Class 16 Accuracy: 4.55%
+Class 17 Accuracy: 81.36%
+Class 18 Accuracy: 0.00%
+Class 19 Accuracy: 66.10%
+Class 20 Accuracy: 5.56%
+Class 21 Accuracy: 19.35%
+Class 22 Accuracy: 0.00%
+------------------------------
+Epoch 39
+Overall Accuracy: 50.61%
+Average Class Accuracy: 46.16%
+Class 0 Accuracy: 52.58%
+Class 1 Accuracy: 61.76%
+Class 2 Accuracy: 83.33%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 68.97%
+Class 5 Accuracy: 35.56%
+Class 6 Accuracy: 52.63%
+Class 7 Accuracy: 42.86%
+Class 8 Accuracy: 83.33%
+Class 9 Accuracy: 36.23%
+Class 10 Accuracy: 6.06%
+Class 11 Accuracy: 65.00%
+Class 12 Accuracy: 78.70%
+Class 13 Accuracy: 61.11%
+Class 14 Accuracy: 95.00%
+Class 15 Accuracy: 81.82%
+Class 16 Accuracy: 0.00%
+Class 17 Accuracy: 27.12%
+Class 18 Accuracy: 5.56%
+Class 19 Accuracy: 50.85%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 67.74%
+Class 22 Accuracy: 5.56%
+------------------------------
+Epoch 43
+Overall Accuracy: 56.19%
+Average Class Accuracy: 49.64%
+Class 0 Accuracy: 70.10%
+Class 1 Accuracy: 64.71%
+Class 2 Accuracy: 64.58%
+Class 3 Accuracy: 10.00%
+Class 4 Accuracy: 75.86%
+Class 5 Accuracy: 51.11%
+Class 6 Accuracy: 21.05%
+Class 7 Accuracy: 78.57%
+Class 8 Accuracy: 95.83%
+Class 9 Accuracy: 57.97%
+Class 10 Accuracy: 21.21%
+Class 11 Accuracy: 40.00%
+Class 12 Accuracy: 75.93%
+Class 13 Accuracy: 27.78%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 90.91%
+Class 16 Accuracy: 9.09%
+Class 17 Accuracy: 59.32%
+Class 18 Accuracy: 33.33%
+Class 19 Accuracy: 54.24%
+Class 20 Accuracy: 5.56%
+Class 21 Accuracy: 29.03%
+Class 22 Accuracy: 5.56%
+------------------------------
+Epoch 47
+Overall Accuracy: 56.92%
+Average Class Accuracy: 51.38%
+Class 0 Accuracy: 65.98%
+Class 1 Accuracy: 73.53%
+Class 2 Accuracy: 66.67%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 75.86%
+Class 5 Accuracy: 48.89%
+Class 6 Accuracy: 15.79%
+Class 7 Accuracy: 78.57%
+Class 8 Accuracy: 91.67%
+Class 9 Accuracy: 47.83%
+Class 10 Accuracy: 30.30%
+Class 11 Accuracy: 0.00%
+Class 12 Accuracy: 72.22%
+Class 13 Accuracy: 72.22%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 72.73%
+Class 16 Accuracy: 31.82%
+Class 17 Accuracy: 52.54%
+Class 18 Accuracy: 44.44%
+Class 19 Accuracy: 61.02%
+Class 20 Accuracy: 0.00%
+Class 21 Accuracy: 74.19%
+Class 22 Accuracy: 5.56%
+------------------------------
+Epoch 56
+Overall Accuracy: 63.47%
+Average Class Accuracy: 56.36%
+Class 0 Accuracy: 70.10%
+Class 1 Accuracy: 76.47%
+Class 2 Accuracy: 70.83%
+Class 3 Accuracy: 10.00%
+Class 4 Accuracy: 82.76%
+Class 5 Accuracy: 44.44%
+Class 6 Accuracy: 42.11%
+Class 7 Accuracy: 64.29%
+Class 8 Accuracy: 100.00%
+Class 9 Accuracy: 43.48%
+Class 10 Accuracy: 33.33%
+Class 11 Accuracy: 10.00%
+Class 12 Accuracy: 77.78%
+Class 13 Accuracy: 55.56%
+Class 14 Accuracy: 95.00%
+Class 15 Accuracy: 18.18%
+Class 16 Accuracy: 22.73%
+Class 17 Accuracy: 89.83%
+Class 18 Accuracy: 44.44%
+Class 19 Accuracy: 76.27%
+Class 20 Accuracy: 55.56%
+Class 21 Accuracy: 74.19%
+Class 22 Accuracy: 38.89%
+------------------------------
+Epoch 61
+Overall Accuracy: 65.29%
+Average Class Accuracy: 61.28%
+Class 0 Accuracy: 71.13%
+Class 1 Accuracy: 67.65%
+Class 2 Accuracy: 52.08%
+Class 3 Accuracy: 0.00%
+Class 4 Accuracy: 82.76%
+Class 5 Accuracy: 55.56%
+Class 6 Accuracy: 42.11%
+Class 7 Accuracy: 85.71%
+Class 8 Accuracy: 95.83%
+Class 9 Accuracy: 59.42%
+Class 10 Accuracy: 42.42%
+Class 11 Accuracy: 20.00%
+Class 12 Accuracy: 75.00%
+Class 13 Accuracy: 61.11%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 81.82%
+Class 16 Accuracy: 40.91%
+Class 17 Accuracy: 88.14%
+Class 18 Accuracy: 50.00%
+Class 19 Accuracy: 67.80%
+Class 20 Accuracy: 66.67%
+Class 21 Accuracy: 64.52%
+Class 22 Accuracy: 38.89%
+------------------------------
+Epoch 64
+Overall Accuracy: 66.26%
+Average Class Accuracy: 61.57%
+Class 0 Accuracy: 72.16%
+Class 1 Accuracy: 64.71%
+Class 2 Accuracy: 75.00%
+Class 3 Accuracy: 10.00%
+Class 4 Accuracy: 55.17%
+Class 5 Accuracy: 82.22%
+Class 6 Accuracy: 36.84%
+Class 7 Accuracy: 92.86%
+Class 8 Accuracy: 91.67%
+Class 9 Accuracy: 59.42%
+Class 10 Accuracy: 30.30%
+Class 11 Accuracy: 45.00%
+Class 12 Accuracy: 66.67%
+Class 13 Accuracy: 61.11%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 90.91%
+Class 16 Accuracy: 9.09%
+Class 17 Accuracy: 83.05%
+Class 18 Accuracy: 16.67%
+Class 19 Accuracy: 83.05%
+Class 20 Accuracy: 72.22%
+Class 21 Accuracy: 90.32%
+Class 22 Accuracy: 27.78%
+------------------------------
+Epoch 67
+Overall Accuracy: 66.38%
+Average Class Accuracy: 61.75%
+Class 0 Accuracy: 72.16%
+Class 1 Accuracy: 70.59%
+Class 2 Accuracy: 58.33%
+Class 3 Accuracy: 20.00%
+Class 4 Accuracy: 72.41%
+Class 5 Accuracy: 62.22%
+Class 6 Accuracy: 63.16%
+Class 7 Accuracy: 42.86%
+Class 8 Accuracy: 91.67%
+Class 9 Accuracy: 37.68%
+Class 10 Accuracy: 48.48%
+Class 11 Accuracy: 50.00%
+Class 12 Accuracy: 79.63%
+Class 13 Accuracy: 33.33%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 90.91%
+Class 16 Accuracy: 59.09%
+Class 17 Accuracy: 91.53%
+Class 18 Accuracy: 11.11%
+Class 19 Accuracy: 83.05%
+Class 20 Accuracy: 50.00%
+Class 21 Accuracy: 70.97%
+Class 22 Accuracy: 61.11%
+------------------------------
+Epoch 69
+Overall Accuracy: 69.42%
+Average Class Accuracy: 66.66%
+Class 0 Accuracy: 74.23%
+Class 1 Accuracy: 85.29%
+Class 2 Accuracy: 77.08%
+Class 3 Accuracy: 30.00%
+Class 4 Accuracy: 82.76%
+Class 5 Accuracy: 53.33%
+Class 6 Accuracy: 52.63%
+Class 7 Accuracy: 78.57%
+Class 8 Accuracy: 95.83%
+Class 9 Accuracy: 55.07%
+Class 10 Accuracy: 45.45%
+Class 11 Accuracy: 40.00%
+Class 12 Accuracy: 78.70%
+Class 13 Accuracy: 55.56%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 90.91%
+Class 16 Accuracy: 36.36%
+Class 17 Accuracy: 83.05%
+Class 18 Accuracy: 50.00%
+Class 19 Accuracy: 72.88%
+Class 20 Accuracy: 55.56%
+Class 21 Accuracy: 67.74%
+Class 22 Accuracy: 72.22%
+------------------------------
+Epoch 71
+Overall Accuracy: 70.75%
+Average Class Accuracy: 71.83%
+Class 0 Accuracy: 57.73%
+Class 1 Accuracy: 85.29%
+Class 2 Accuracy: 83.33%
+Class 3 Accuracy: 70.00%
+Class 4 Accuracy: 86.21%
+Class 5 Accuracy: 71.11%
+Class 6 Accuracy: 52.63%
+Class 7 Accuracy: 92.86%
+Class 8 Accuracy: 95.83%
+Class 9 Accuracy: 53.62%
+Class 10 Accuracy: 42.42%
+Class 11 Accuracy: 45.00%
+Class 12 Accuracy: 77.78%
+Class 13 Accuracy: 66.67%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 90.91%
+Class 16 Accuracy: 54.55%
+Class 17 Accuracy: 72.88%
+Class 18 Accuracy: 50.00%
+Class 19 Accuracy: 81.36%
+Class 20 Accuracy: 77.78%
+Class 21 Accuracy: 77.42%
+Class 22 Accuracy: 66.67%
+------------------------------
+Epoch 79
+Overall Accuracy: 74.39%
+Average Class Accuracy: 73.14%
+Class 0 Accuracy: 68.04%
+Class 1 Accuracy: 85.29%
+Class 2 Accuracy: 68.75%
+Class 3 Accuracy: 50.00%
+Class 4 Accuracy: 86.21%
+Class 5 Accuracy: 64.44%
+Class 6 Accuracy: 57.89%
+Class 7 Accuracy: 85.71%
+Class 8 Accuracy: 87.50%
+Class 9 Accuracy: 65.22%
+Class 10 Accuracy: 54.55%
+Class 11 Accuracy: 50.00%
+Class 12 Accuracy: 85.19%
+Class 13 Accuracy: 55.56%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 90.91%
+Class 16 Accuracy: 81.82%
+Class 17 Accuracy: 88.14%
+Class 18 Accuracy: 55.56%
+Class 19 Accuracy: 79.66%
+Class 20 Accuracy: 77.78%
+Class 21 Accuracy: 77.42%
+Class 22 Accuracy: 66.67%
+------------------------------
+Epoch 82
+Overall Accuracy: 74.51%
+Average Class Accuracy: 73.91%
+Class 0 Accuracy: 68.04%
+Class 1 Accuracy: 85.29%
+Class 2 Accuracy: 81.25%
+Class 3 Accuracy: 50.00%
+Class 4 Accuracy: 82.76%
+Class 5 Accuracy: 73.33%
+Class 6 Accuracy: 63.16%
+Class 7 Accuracy: 85.71%
+Class 8 Accuracy: 91.67%
+Class 9 Accuracy: 52.17%
+Class 10 Accuracy: 54.55%
+Class 11 Accuracy: 60.00%
+Class 12 Accuracy: 84.26%
+Class 13 Accuracy: 66.67%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 100.00%
+Class 16 Accuracy: 45.45%
+Class 17 Accuracy: 88.14%
+Class 18 Accuracy: 55.56%
+Class 19 Accuracy: 81.36%
+Class 20 Accuracy: 88.89%
+Class 21 Accuracy: 80.65%
+Class 22 Accuracy: 61.11%
+------------------------------
+Epoch 84
+Overall Accuracy: 74.64%
+Average Class Accuracy: 74.74%
+Class 0 Accuracy: 61.86%
+Class 1 Accuracy: 85.29%
+Class 2 Accuracy: 79.17%
+Class 3 Accuracy: 30.00%
+Class 4 Accuracy: 82.76%
+Class 5 Accuracy: 64.44%
+Class 6 Accuracy: 52.63%
+Class 7 Accuracy: 92.86%
+Class 8 Accuracy: 91.67%
+Class 9 Accuracy: 52.17%
+Class 10 Accuracy: 57.58%
+Class 11 Accuracy: 65.00%
+Class 12 Accuracy: 86.11%
+Class 13 Accuracy: 66.67%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 90.91%
+Class 16 Accuracy: 90.91%
+Class 17 Accuracy: 81.36%
+Class 18 Accuracy: 61.11%
+Class 19 Accuracy: 83.05%
+Class 20 Accuracy: 83.33%
+Class 21 Accuracy: 93.55%
+Class 22 Accuracy: 66.67%
+------------------------------
+Epoch 85
+Overall Accuracy: 75.73%
+Average Class Accuracy: 74.89%
+Class 0 Accuracy: 67.01%
+Class 1 Accuracy: 85.29%
+Class 2 Accuracy: 81.25%
+Class 3 Accuracy: 40.00%
+Class 4 Accuracy: 82.76%
+Class 5 Accuracy: 64.44%
+Class 6 Accuracy: 63.16%
+Class 7 Accuracy: 85.71%
+Class 8 Accuracy: 91.67%
+Class 9 Accuracy: 60.87%
+Class 10 Accuracy: 57.58%
+Class 11 Accuracy: 55.00%
+Class 12 Accuracy: 84.26%
+Class 13 Accuracy: 61.11%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 90.91%
+Class 16 Accuracy: 77.27%
+Class 17 Accuracy: 89.83%
+Class 18 Accuracy: 66.67%
+Class 19 Accuracy: 84.75%
+Class 20 Accuracy: 83.33%
+Class 21 Accuracy: 77.42%
+Class 22 Accuracy: 72.22%
+------------------------------

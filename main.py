@@ -34,11 +34,13 @@ warmup_epochs = num_epochs/10  # 学习率预热阶段
 max_lr = 1e-3       # 预热后的最大学习率0.001
 min_lr = 1e-6       # 余弦退火的最小学习率
 
-# save_path = './output/test9'
-save_path = f'./output/{dataset_name}/{ "pretrained" if is_pre else "" }_{model_name}/{method_name}_{optim_name}'
 # 合成数据配置（按需修改）
 use_synth_data = True
-synth_train_path = "/picassox/intelligent-cpfs/segmentation/intern_segmentation/dc1/Infinity/outputs/Generated_Results/DOTA/var_full"             #"/path/to/your/synthetic_train", 目录结构需与 ImageFolder 一致
+synth_train_path = "/picassox/intelligent-cpfs/segmentation/intern_segmentation/dc1/Infinity/outputs/Generated_Results/DOTA/var_topk_confidence"     # var_topk_entropy, var_topk_confidence, var_full
+synth_name = synth_train_path.split('/')[-1] if use_synth_data else "no_synth_data"
+
+# save_path = './output/test9'
+save_path = f'./output/{dataset_name}/{ "pretrained" if is_pre else "" }_{model_name}/{method_name}_{synth_name}'
 
 # 0. 路径管理
 models_save_path = os.path.join(save_path,'models')
@@ -192,7 +194,7 @@ if use_wandb:
     wandb.login(key="711f941f459be2c398272020e434baaf9bb1b2e7", relogin=True)
     wandb.init(
         project="lt-uncertainty",
-        name=f"{dataset_name}_{model_name}_use_synth_data{use_synth_data}_{time.strftime('%m%d%H')}",
+        name=f"{dataset_name}_{model_name}_{synth_name}_{time.strftime('%m%d%H')}",
         dir=logs_save_path,
         config={
             "model_name": model_name,

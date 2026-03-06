@@ -1,4 +1,3 @@
-output/
+*logs
 __pycache__/
-results/
 *.csv
